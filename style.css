@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+    background-color: #e5e5f7;
+    background-image: url(./Dracula.jpg);
+    display: flex;
+    min-height: 100vh;
+}
+
+.form{
+    background-color: azure;
+    color: rgb(29, 28, 28);
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 50px -5px rgb(0, 0, 0 );
+    text-align: center;
+}
+.form_title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+.form_paragraph{
+    font-weight: 300;
+}
+
+.form_link{
+    font-weight: 400;
+    color: rgb(6, 7, 7);
+    gap: 2.5em;
+
+}
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form_group{
+    position: relative;
+    --color:#1b08ec7e;
+}
+
+.form_input{
+    width: 100%;
+    background: none;
+    color: #000000;
+    font-size: 1rem;
+    padding: .6em .3em ;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.form_input:focus + .form_label{
+    transform: translateY(-12px) scale(.7);
+}
+
+
+
+
+.form_submit{
+    background: #DC2424;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
